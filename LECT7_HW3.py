@@ -17,7 +17,6 @@ else:
         if x not in dupl_items:
             uniq_items.append(x)
             dupl_items.add(x)
-    uniq_items.sort()
 
     print(uniq_items[-2])
 
