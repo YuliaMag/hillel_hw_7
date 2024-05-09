@@ -22,9 +22,10 @@ def mnt(x):
 # ========================================================= #
 
 
-date_s = ["14-Dec", "12-Apr", "13-Apr", "31-Dec", "1-Jan", "12-Jan"]
+# date_s = ["14-Dec", "12-Apr", "13-Apr", "31-Dec", "1-Jan", "12-Jan"]
+date_s = ["14-Dec", "12-Apr", "13-Apr", "31-Dec", "1-Jan", "12-Jan", "10-Dec"]
 
-print(sorted(date_s, key=lambda m: (mnt(m.split("-")[1]))))
+print(sorted(date_s, key=lambda m: (mnt(m.split("-")[1]), m.split("-")[0])))
 
 
 
